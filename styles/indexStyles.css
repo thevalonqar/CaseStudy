@@ -1,0 +1,26 @@
+/*
+    filename: indexStyles.css
+    authors: Sara Simpson, Ashley Warner, James Macadoo, Christopher Boston
+*/
+
+/* reset styles */
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    background-color: grey;
+}
+
+li {
+    display: inline-block;
+    padding: 1em;
+}
+
+.nav-link {
+    list-style: none;
+    color: black;
+}
+
