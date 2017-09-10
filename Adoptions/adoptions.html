@@ -3,8 +3,149 @@
     <head>
         <meta charset="utf-8">
         <title>Animal Shelter</title>
+        <link rel="stylesheet" href="adoptions.css">
+        <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     </head>
     <body>
-        <p>Adoptions</p>
+        
+    <!--Header and Intro Paragraph -->
+        <header>
+        <div class="container col-xs-12">
+            <h1 class="display-3">Adoptions</h1>
+            <hr>
+            <p class="adoption-intro">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiuxsod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+        </header>
+        
+        <!--Dog Profile List -->
+        <div class="container">
+            <div class="row" id="profile-list">
+                <div class="col col-xs-12 col-sm-6 col-lg-4">
+                    <img src="Thumbnail1.jpg" alt="Dog Picture" class="img-thumbnail">
+                </div>
+                <div class="col col-xs-12 col-sm-6 col-lg-4">
+                    <img src="Thumbnail2.jpg" alt="Dog Picture" class="img-thumbnail">
+                </div>
+                <div class="col col-xs-12 col-sm-6 col-lg-4">
+                    <img src="Thumbnail3.jpg" alt="Dog Picture" class="img-thumbnail">
+                </div>
+                <div class="col col-xs-12 col-sm-6 col-lg-4">
+                    <img src="Thumbnail4.jpg" alt="Dog Picture" class="img-thumbnail">
+                </div>
+                <div class="col col-xs-12 col-sm-6 col-lg-4">
+                    <img src="Thumbnail5.jpg" alt="Dog Picture" class="img-thumbnail">
+                </div>
+                <div class="col col-xs-12 col-sm-6 col-lg-4">
+                    <img src="Thumbnail6.jpg" alt="Dog Picture" class="img-thumbnail">
+                </div>
+                <div class="col col-xs-12 col-sm-6 col-lg-4">
+                    <img src="Thumbnail7.jpg" alt="Dog Picture" class="img-thumbnail">
+                </div>
+                <div class="col col-xs-12 col-sm-6 col-lg-4">
+                    <img src="Thumbnail8.png" alt="Dog Picture" class="img-thumbnail">
+                </div>
+                <div class="col col-xs-12 col-sm-6 col-lg-4">
+                    <img src="Thumbnail9.jpg" alt="Dog Picture" class="img-thumbnail">
+                </div>
+                <div class="col col-xs-12 col-sm-6 col-lg-4">
+                    <img src="Thumbnail10.jpg" alt="Dog Picture" class="img-thumbnail">
+                </div>
+                <div class="col col-xs-12 col-sm-6 col-lg-4">
+                    <img src="Thumbnail11.jpg" alt="Dog Picture" class="img-thumbnail">
+                </div>
+                <div class="col col-xs-12 col-sm-6 col-lg-4">
+                    <img src="Thumbnail12.jpg" alt="Dog Picture" class="img-thumbnail">
+                </div>
+                <div class="col col-xs-12 col-sm-6 col-lg-4">
+                    <img src="Thumbnail13.jpg" alt="Dog Picture" class="img-thumbnail">
+                </div>
+                <div class="col col-xs-12 col-sm-6 col-lg-4">
+                    <img src="Thumbnail14.jpg" alt="Dog Picture" class="img-thumbnail">
+                </div>
+                <div class="col col-xs-12 col-sm-6 col-lg-4">
+                    <img src="Thumbnail15.jpg" alt="Dog Picture" class="img-thumbnail">
+                </div>
+            </div>
+        </div>
+        
+        
+        <!--Adoptions Form-->
+        <div class = "container-fluid" id="form-div">
+            <form>
+                <!--Animal's Information-->
+                <h1 class="display-4">Animal Information</h1>
+              <div class="form-row">
+                <div class="form-group col-sm-6">
+                <label for="animalName" class="col-form-label">Animal's Name</label>
+                <input type="text" class="form-control" id="animalName" placeholder="Name">
+                </div>
+                <div class="form-group col-sm-6">
+                <label for="animalAge" class="col-form-label">Animal's Age</label>
+                <input type="text" class="form-control" id="animalAge" placeholder="Age">
+                </div>
+                <div class="form-group col-sm-6">
+                <label for="animalType" class="col-form-label">Animal's Type</label>
+                <input type="text" class="form-control" id="animalType" placeholder="Dog/Cat">
+                </div>
+                <div class="form-group col-sm-6">
+                <label for="animalGender" class="col-form-label">Animal's Gender</label>
+                <input type="text" class="form-control" id="animalGender" placeholder="Male/Female">
+                </div>
+              </div>
+                
+                <!--Applicant Information-->
+                <h1 class="display-4">Applicant Information</h1>
+                <div class="form-row">
+                <div class="form-group col-sm-6">
+                <label for="applicantName" class="col-form-label">Applicant's Full Name</label>
+                <input type="text" class="form-control" id="applicantName" placeholder="First & Last Name">
+                </div>
+                <div class="form-group col-sm-6">
+                <label for="applicantAge" class="col-form-label">Applicant's Age</label>
+                <input type="text" class="form-control" id="applicantAge" placeholder="Age">
+                </div>
+                <div class="form-group col-sm-6">
+                <label for="applicantEmail" class="col-form-label">Email Address</label>
+                <input type="email" class="form-control" id="applicantEmail" placeholder="Email">
+                </div>
+                <div class="form-group col-sm-6">
+                <label for="applicantPhone" class="col-form-label">Phone Number</label>
+                <input type="phone" class="form-control" id="applicantPhone" placeholder="Phone Number">
+                </div>
+              <div class="form-group col-sm-6">
+                <label for="inputAddress" class="col-form-label">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+              </div>
+              <div class="form-group col-sm-6">
+                <label for="inputAddress2" class="col-form-label">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+              </div>
+                <div class="form-group col-sm-6">
+                  <label for="inputCity" class="col-form-label">City</label>
+                  <input type="text" class="form-control" id="inputCity" placeholder="City">
+                </div>
+                <div class="form-group col-sm-3">
+                  <label for="inputState" class="col-form-label">State</label>
+                  <input type="text" class="form-control" id="inputState" placeholder="State">
+                </div>
+                <div class="form-group col-sm-3">
+                  <label for="inputZip" class="col-form-label">Zip</label>
+                  <input type="text" class="form-control" id="inputZip" placeholder="Zip">
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">SUBMIT</button>
+            </form>
+                
+        </div>
+        
+        
+        <!--Bootstrap JS-->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/usm/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     </body>
 </html>
