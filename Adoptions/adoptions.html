@@ -20,12 +20,18 @@
             </p>
         </div>
         </header>
-        
+        <!--Modal-->
+        <div class="modalClass">
+            <div class="modelContent">
+                <p>Lorem ipsum</p>
+                <p class="closeModel">Close</p>
+            </div>
+        </div>
         <!--Dog Profile List -->
         <div class="container">
             <div class="row" id="profile-list">
                 <div class="col col-xs-12 col-sm-6 col-lg-4">
-                    <img src="Thumbnail1.jpg" alt="Dog Picture" class="img-thumbnail">
+                    <img src="Thumbnail1.jpg" alt="Dog Picture" class="img-thumbnail" onclick="imageClickChamp()">
                 </div>
                 <div class="col col-xs-12 col-sm-6 col-lg-4">
                     <img src="Thumbnail2.jpg" alt="Dog Picture" class="img-thumbnail">
@@ -72,10 +78,9 @@
             </div>
         </div>
         
-        
         <!--Adoptions Form-->
         <div class = "container-fluid" id="form-div">
-            <form>
+            <form class="col-xs-12 col-lg-8" id="form">
                 <!--Animal's Information-->
                 <h1 class="display-4">Animal Information</h1>
               <div class="form-row">
@@ -142,6 +147,8 @@
                 
         </div>
         
+    <!--My JS File-->
+    <script type="text/javascript" src="adoptions.js"></script>
         
         <!--Bootstrap JS-->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
