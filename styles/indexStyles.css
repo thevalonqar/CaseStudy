@@ -44,9 +44,17 @@
 	transform: rotate(-45deg);
 }
 
+/* attempting to make nav transparent */
+.navbar-inner {
+    background: transparent;
+}
+
 /* made wrapper to try and use this photo for the whole header */
 #header-wrapper {
-    background: url("http://res.cloudinary.com/sara-simpson-img/image/upload/c_scale,w_3702/v1505051535/duffy-brook-350228_vnaxkf.jpg")no-repeat center center;
+    background: url("http://res.cloudinary.com/sara-simpson-img/image/upload/c_scale,w_1536/v1505051535/duffy-brook-350228_vnaxkf.jpg")no-repeat center center;
+    width: 100%;
+    height: 700px;
+    background-size: cover;
 }
 
 
