@@ -1,3 +1,4 @@
+/*Modal*/
 function imageClick() {
     "use strict";
     document.getElementById("modalId").style.display = 'block';
@@ -15,3 +16,8 @@ window.onclick = function (event) {
     }
 };
 
+/*Submit Form*/
+function formSubmit() {
+    "use strict";
+    window.confirm("Thank you! Your form has been submitted and an Adoptions Representative will contact you shortly.");
+}
