@@ -11,6 +11,16 @@
 }
 
 /* header */
+li a {
+    color: #fff;
+    margin: 1em;
+    font-size: 1.25em;
+    text-shadow: 2px 2px black;
+}
+.btn {
+    margin: 1.75em;
+    font-size: 1.25;
+}
 
 .nav li a:hover {
     font-size: 1.25em;
@@ -44,17 +54,24 @@
 	transform: rotate(-45deg);
 }
 
-/* attempting to make nav transparent */
-.navbar-inner {
-    background: transparent;
+
+/* made wrapper use this photo for the whole header */
+#header-wrapper {
+    background: url("http://res.cloudinary.com/sara-simpson-img/image/upload/c_fit,h_705/v1505067920/duffy-brook-350228_vnaxkf.jpg")no-repeat center center;
+    width: 100%;
+    height: 800px;
+    background-size: cover;
 }
 
-/* made wrapper to try and use this photo for the whole header */
-#header-wrapper {
-    background: url("http://res.cloudinary.com/sara-simpson-img/image/upload/c_scale,w_1536/v1505051535/duffy-brook-350228_vnaxkf.jpg")no-repeat center center;
-    width: 100%;
-    height: 700px;
-    background-size: cover;
+/* jumbotron */
+.jumbotron {
+    background-color: #ff7b60 !important;
+}
+
+.jumbotron p {
+    font-size: 3em;
+    text-align: center;
+    
 }
 
 
