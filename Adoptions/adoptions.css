@@ -82,13 +82,13 @@ html{
     margin: 0 auto;
 }
 
-.col{
+.pic{
     text-align: center;
     margin-top: 4%;
 }
 
 /*Profile Pic Hover*/
-.col > .img-thumbnail:hover{
+.pic > .img-thumbnail:hover{
     background-color: #FF7B60;
     border: 1px solid #FF7B60;
 }
