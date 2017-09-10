@@ -143,3 +143,17 @@ form > .btn{
 form > .btn:hover{
     background-color: #FF7B60;
 }
+
+@media screen and (max-width: 380px){
+    #mobileHeader {
+        font-size: 60px;
+    }
+    
+    #form > #mobileAnimalHeader{
+        font-size: 40px;
+    }
+    
+    #form > #mobileApplicantHeader{
+        font-size: 40px;
+    }
+}
