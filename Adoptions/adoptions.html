@@ -9,9 +9,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     </head>
     <body>
-        
-    <!--Header and Intro Paragraph -->
-        <header>
+        <!--Header and Intro Paragraph -->
+        <header>    
         <div class="container col-xs-12">
             <h1 class="display-3">Adoptions</h1>
             <hr>
@@ -20,66 +19,73 @@
             </p>
         </div>
         </header>
+        
         <!--Modal-->
-        <div class="modalClass">
+        <div id= "modalId" class="modalClass">
             <div class="modelContent">
-                <p>Lorem ipsum</p>
-                <p class="closeModel">Close</p>
+                <div id="modalContent">
+                    <button id="adoptMe" type="button" class="btn btn-sm"><a id="adoptLink" href="#jump" onclick="imageClose()">Adopt Me</a></button>
+                    <p class="petName">Lorem</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiuxsod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>
+                    <p id="closeModal" onclick="imageClose()">Close</p>
+                </div>
             </div>
         </div>
+        
         <!--Dog Profile List -->
         <div class="container">
             <div class="row" id="profile-list">
                 <div class="col col-xs-12 col-sm-6 col-lg-4">
-                    <img src="Thumbnail1.jpg" alt="Dog Picture" class="img-thumbnail" onclick="imageClickChamp()">
+                    <img src="Thumbnail1.jpg" alt="Dog Picture" class="img-thumbnail" onclick="imageClick()">
                 </div>
                 <div class="col col-xs-12 col-sm-6 col-lg-4">
-                    <img src="Thumbnail2.jpg" alt="Dog Picture" class="img-thumbnail">
+                    <img src="Thumbnail2.jpg" alt="Dog Picture" class="img-thumbnail" onclick="imageClick()">
                 </div>
                 <div class="col col-xs-12 col-sm-6 col-lg-4">
-                    <img src="Thumbnail3.jpg" alt="Dog Picture" class="img-thumbnail">
+                    <img src="Thumbnail3.jpg" alt="Dog Picture" class="img-thumbnail" onclick="imageClick()">
                 </div>
                 <div class="col col-xs-12 col-sm-6 col-lg-4">
-                    <img src="Thumbnail4.jpg" alt="Dog Picture" class="img-thumbnail">
+                    <img src="Thumbnail4.jpg" alt="Dog Picture" class="img-thumbnail" onclick="imageClick()">
                 </div>
                 <div class="col col-xs-12 col-sm-6 col-lg-4">
-                    <img src="Thumbnail5.jpg" alt="Dog Picture" class="img-thumbnail">
+                    <img src="Thumbnail5.jpg" alt="Dog Picture" class="img-thumbnail" onclick="imageClick()">
                 </div>
                 <div class="col col-xs-12 col-sm-6 col-lg-4">
-                    <img src="Thumbnail6.jpg" alt="Dog Picture" class="img-thumbnail">
+                    <img src="Thumbnail6.jpg" alt="Dog Picture" class="img-thumbnail" onclick="imageClick()">
                 </div>
                 <div class="col col-xs-12 col-sm-6 col-lg-4">
-                    <img src="Thumbnail7.jpg" alt="Dog Picture" class="img-thumbnail">
+                    <img src="Thumbnail7.jpg" alt="Dog Picture" class="img-thumbnail" onclick="imageClick()">
                 </div>
                 <div class="col col-xs-12 col-sm-6 col-lg-4">
-                    <img src="Thumbnail8.png" alt="Dog Picture" class="img-thumbnail">
+                    <img src="Thumbnail8.png" alt="Dog Picture" class="img-thumbnail" onclick="imageClick()">
                 </div>
                 <div class="col col-xs-12 col-sm-6 col-lg-4">
-                    <img src="Thumbnail9.jpg" alt="Dog Picture" class="img-thumbnail">
+                    <img src="Thumbnail9.jpg" alt="Dog Picture" class="img-thumbnail" onclick="imageClick()">
                 </div>
                 <div class="col col-xs-12 col-sm-6 col-lg-4">
-                    <img src="Thumbnail10.jpg" alt="Dog Picture" class="img-thumbnail">
+                    <img src="Thumbnail10.jpg" alt="Dog Picture" class="img-thumbnail" onclick="imageClick()">
                 </div>
                 <div class="col col-xs-12 col-sm-6 col-lg-4">
-                    <img src="Thumbnail11.jpg" alt="Dog Picture" class="img-thumbnail">
+                    <img src="Thumbnail11.jpg" alt="Dog Picture" class="img-thumbnail" onclick="imageClick()">
                 </div>
                 <div class="col col-xs-12 col-sm-6 col-lg-4">
-                    <img src="Thumbnail12.jpg" alt="Dog Picture" class="img-thumbnail">
+                    <img src="Thumbnail12.jpg" alt="Dog Picture" class="img-thumbnail" onclick="imageClick()">
                 </div>
                 <div class="col col-xs-12 col-sm-6 col-lg-4">
-                    <img src="Thumbnail13.jpg" alt="Dog Picture" class="img-thumbnail">
+                    <img src="Thumbnail13.jpg" alt="Dog Picture" class="img-thumbnail" onclick="imageClick()">
                 </div>
                 <div class="col col-xs-12 col-sm-6 col-lg-4">
-                    <img src="Thumbnail14.jpg" alt="Dog Picture" class="img-thumbnail">
+                    <img src="Thumbnail14.jpg" alt="Dog Picture" class="img-thumbnail" onclick="imageClick()">
                 </div>
                 <div class="col col-xs-12 col-sm-6 col-lg-4">
-                    <img src="Thumbnail15.jpg" alt="Dog Picture" class="img-thumbnail">
+                    <img src="Thumbnail15.jpg" alt="Dog Picture" class="img-thumbnail" onclick="imageClick()">
                 </div>
             </div>
         </div>
         
         <!--Adoptions Form-->
         <div class = "container-fluid" id="form-div">
+            <a name="jump"></a>
             <form class="col-xs-12 col-lg-8" id="form">
                 <!--Animal's Information-->
                 <h1 class="display-4">Animal Information</h1>
@@ -141,14 +147,18 @@
                   <label for="inputZip" class="col-form-label">Zip</label>
                   <input type="text" class="form-control" id="inputZip" placeholder="Zip">
                 </div>
+                <div id="reasonDiv" class="form-group">
+                  <label for="inputReason" class="col-form-label">Reason Why You're Interested in Adopting This Animal</label>
+                  <input type="text" class="form-control" id="inputReason">
+                </div>
               </div>
               <button type="submit" class="btn btn-primary">SUBMIT</button>
             </form>
                 
         </div>
         
-    <!--My JS File-->
-    <script type="text/javascript" src="adoptions.js"></script>
+        <!--My JS File-->
+        <script type="text/javascript" src="adoptions.js"></script>
         
         <!--Bootstrap JS-->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

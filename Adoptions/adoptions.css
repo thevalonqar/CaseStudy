@@ -3,6 +3,8 @@ html{
     width: 100%;
 }
 
+/*
+
 /*Adoptions Header Style*/
 .display-3{
     margin: 3%;
@@ -15,6 +17,8 @@ html{
     margin-top: 2%;
 }
 
+
+/*Modal*/
 .modalClass{
     display: none;
     position: fixed;
@@ -28,26 +32,48 @@ html{
     background-color: rgba(0,0,0,0.4);
 }
 
-.modalContent {
+#modalContent {
     background-color: #fefefe;
     margin: 15% auto;
-    padding: 20px;
+    padding: 30px;
     border: 1px solid #888;
     width: 80%;
+    cursor: default;
+    color: #77747F;
 }
 
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
+#adoptLink{
+    color: white;
     text-decoration: none;
-    cursor: pointer;
+}
+
+.petName {
+    color: #5AE8DE;
+    font-weight: 500;
+    font-variant: small-caps;
+    font-size: 28px;
+}
+
+#adoptMe{
+    float: right;
+    background-color: #83A7F7;
+    color: #fefefe;
+}
+
+#adoptMe:hover{
+    background-color: #FF7B60;
+}
+
+#closeModal {
+    margin-bottom: -1%;
+    color: #aaa;
+    text-align: right;
+}
+
+#closeModal:hover,
+#closeModal:focus {
+    color: #FF7B60;
+    text-decoration: none;
 }
 
 /*Centering Profile Images*/
@@ -97,8 +123,22 @@ div > form > .form-row > .form-group > input::placeholder{
     color: #D6D4D8;
 }
 
+/*Reason Text Box*/
+
+#reasonDiv {
+    width: 100%;
+}
+
+#inputReason {
+    height: 80px;
+}
+
 /*Submit Button*/
 form > .btn{
     background-color: #5AE8DE;
-    border: 0.5px solid #77747F;
+    border: none;
+}
+
+form > .btn:hover{
+    background-color: #FF7B60;
 }
