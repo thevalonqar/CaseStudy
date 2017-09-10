@@ -5,22 +5,48 @@
 
 /* reset styles */
 * {
-    border: 0;
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-nav {
-    background-color: grey;
+/* header */
+
+.nav li a:hover {
+    font-size: 1.25em;
 }
 
-li {
-    display: inline-block;
-    padding: 1em;
+/* .navbar-toggle css animates the hamburger menu */
+.navbar-toggle .icon-bar:nth-of-type(2) {
+	top: 1px;
 }
 
-.nav-link {
-    list-style: none;
-    color: black;
+.navbar-toggle .icon-bar:nth-of-type(3) {
+	top: 2px;
 }
+
+.navbar-toggle .icon-bar {
+	position: relative;
+	transition: all 500ms ease-in-out;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(1) {
+	top: 6px;
+	transform: rotate(45deg);
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(2) {
+	background-color: transparent;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(3) {
+	top: -6px;
+	transform: rotate(-45deg);
+}
+
+/* made wrapper to try and use this photo for the whole header */
+#header-wrapper {
+    background: url("http://res.cloudinary.com/sara-simpson-img/image/upload/c_scale,w_3702/v1505051535/duffy-brook-350228_vnaxkf.jpg")no-repeat center center;
+}
+
 
