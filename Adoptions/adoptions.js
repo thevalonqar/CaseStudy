@@ -19,5 +19,5 @@ window.onclick = function (event) {
 /*Submit Form*/
 function formSubmit() {
     "use strict";
-    window.confirm("Thank you! Your form has been submitted and an Adoptions Representative will contact you shortly.");
+    window.alert("Thank you! Your form has been submitted and an Adoptions Representative will contact you shortly.");
 }
