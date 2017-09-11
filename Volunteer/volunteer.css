@@ -1,0 +1,23 @@
+/* Font for Page */
+html{
+    font-family: 'Encode Sans Condensed', sans-serif;
+    width: 100%;
+}
+
+/*Volunteer Header Style*/
+.display-3{
+    margin: 3%;
+    color: #5AE8DE;
+}
+
+/*Volunteer Intro Paragraph*/
+.volunteer-intro{
+    color: #77747F;
+    margin-top: 2%;
+    width:95%;
+}
+
+/* Jumbotron */
+a > .btn{
+  text-align: center;
+}
