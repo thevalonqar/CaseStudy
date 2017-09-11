@@ -15,24 +15,30 @@ body {
 }
 
 /* header */
+#logo {
+    padding: 1.25em;
+}
 
-li a, li a:visited {
+#navigation li a, #navigation li a:visited {
     color: #fff;
     margin: 1em;
     font-size: 1.25em;
     text-shadow: 2px 2px black;
 }
 .donate {
-    margin: 1.75em;
+    margin: 4em;
     font-size: 1.25;
     float: right;
 }
 
-li a:hover  {
+#navigation li a:hover  {
     font-size: 1.25em;
-    color: #ff7b60;
+    color: #fff;
     text-decoration: none;
-    text-shadow: none;
+    text-shadow: 2px 2px black;
+    font-weight: bold;
+    background-color: #ff7b60;
+    border-radius: 10%;
 }
 
 ul {
@@ -41,35 +47,11 @@ ul {
 
 li {
     display: inline-block;
-    margin: 2.5em;
+    margin: 2em;
 }
 
-/* .navbar-toggle css animates the hamburger menu */
-.navbar-toggle .icon-bar:nth-of-type(2) {
-	top: 1px;
-}
-
-.navbar-toggle .icon-bar:nth-of-type(3) {
-	top: 2px;
-}
-
-.navbar-toggle .icon-bar {
-	position: relative;
-	transition: all 500ms ease-in-out;
-}
-
-.navbar-toggle.active .icon-bar:nth-of-type(1) {
-	top: 6px;
-	transform: rotate(45deg);
-}
-
-.navbar-toggle.active .icon-bar:nth-of-type(2) {
-	background-color: transparent;
-}
-
-.navbar-toggle.active .icon-bar:nth-of-type(3) {
-	top: -6px;
-	transform: rotate(-45deg);
+.nav li a:hover {
+    font-size: 1.25em;
 }
 
 .navbar {
@@ -86,7 +68,7 @@ li {
 
 /* made wrapper use this photo for the whole header */
 #header-wrapper {
-    background: url("http://res.cloudinary.com/sara-simpson-img/image/upload/c_fit,h_705/v1505067920/duffy-brook-350228_vnaxkf.jpg")no-repeat center center;
+    background: url("http://res.cloudinary.com/sara-simpson-img/image/upload/v1505128377/duffy-brook-350228_vnaxkf_f9dpde.jpg")no-repeat center center;
     width: 100%;
     height: 650px;
     background-size: cover;
@@ -106,6 +88,7 @@ li {
     text-align: center;
     color: #fff;
     font-family: 'Encode Sans Condensed', sans-serif;
+    margin: 1em;
 }
 
 /* main */
@@ -128,6 +111,7 @@ li {
     margin: 3em 2em 0 0;
     text-align: center;
     padding: 1em;
+    font-size: 1.25em;
 }
 
 
@@ -152,8 +136,9 @@ li {
 }
 .social-media-icons {
     text-align: center;
-    margin-top: 1.25em;
-    padding: 1.25em;
+    margin: 1.5em 0;
+    padding: 1.55em 0;
+    cursor: pointer;
 }
 
 .resources {
@@ -165,6 +150,7 @@ li {
     color: #fff;
     margin-top: 1.5em;
     padding: 3em;
+    font-size: 1.25em;
 }
 
 .resources a,
@@ -172,6 +158,10 @@ li {
 .resources a:visited {
     text-decoration: none;
     color: #000;
+}
+
+.resources a:hover {
+    text-decoration: underline;
 }
 
 footer {
@@ -204,3 +194,12 @@ footer h2 {
     padding: 15px;
     border-radius: 10px;
 }
+
+/* media queries */
+ @media only screen and (max-width: 768px) {
+    .navbar .navbar-collapse {
+        border-color: #83a7f7;
+        background-color: #d6d4d8;
+     } 
+     
+ }
