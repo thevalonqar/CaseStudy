@@ -1,0 +1,171 @@
+/*
+    filename: events.css
+    authors: Sara Simpson, Ashley Warner, James Macadoo, Christopher Boston
+*/
+
+/* reset styles */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* header */
+#logo {
+    padding: 1.25em;
+}
+
+#navigation li a, #navigation li a:visited {
+    color: #fff;
+    margin: 1em;
+    font-size: 1.25em;
+    text-shadow: 2px 2px black;
+}
+.donate {
+    margin: 4em;
+    font-size: 1.25;
+    float: right;
+}
+
+#navigation li a:hover  {
+    font-size: 1.25em;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 2px 2px black;
+    font-weight: bold;
+    background-color: #ff7b60;
+    border-radius: 10%;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    margin: 2em;
+}
+
+.nav li a:hover {
+    font-size: 1.25em;
+}
+
+.navbar {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+#hamburger {
+    border: none !important;
+}
+#hamburger:hover {
+    background-color: #ff7b60;
+}
+
+/* jumbotron */
+.jumbotron {
+    background-color: #83a7f7 !important;
+}
+
+.jumbotron p {
+    font-size: 3em;
+    text-align: center;
+    color: #fff;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    margin: 1em;
+}
+
+.social-media-icons {
+    text-align: center;
+    color: #ff7b60;
+}
+
+/* main */
+.display-3{
+    margin: 3%;
+    margin-top: -1%;
+    color: #5AE8DE;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    font-size: 4em;
+}
+/* footer */
+.follow {
+    margin-top: 1em;
+    text-align: center;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    color: #fff;
+
+}
+.social-media-icons {
+    text-align: center;
+    margin: 1.5em 0;
+    padding: 1.55em 0;
+    cursor: pointer;
+}
+
+.resources {
+    text-align: center;
+    margin-top: 1.5em;
+    padding: 1em;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    background-color: #77747f;
+    color: #fff;
+    margin-top: 1.5em;
+    padding: 3em;
+    font-size: 1.25em;
+}
+
+.resources a,
+.resources a:hover,
+.resources a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+.resources a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #d6d4d8;
+}
+
+footer h2 {
+    text-shadow: 2px 2px black;
+}
+
+.contact {
+    background-color: #77747f;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.15em;
+    padding: 2em;
+}
+/* back to top button */
+#topButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border:none;
+    outline: none;
+    background-color: transparent;
+    color: #000;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* media queries */
+ @media only screen and (max-width: 768px) {
+    .navbar .navbar-collapse {
+        border-color: #83a7f7;
+        background-color: #d6d4d8;
+     }
+
+ }
