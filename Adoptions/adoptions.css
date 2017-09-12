@@ -21,10 +21,10 @@ body {
 }
 
 #navigation li a, #navigation li a:visited {
-    color: #fff;
+    color: 77747F;
     margin: 1em;
     font-size: 1.25em;
-    text-shadow: 2px 2px black;
+    text-shadow: 2px 1px black;
 }
 .donate {
     margin: 4em;
@@ -74,13 +74,18 @@ li {
     margin: 3%;
     margin-top: -1%;
     color: #5AE8DE;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    font-size: 3.5em;
 }
 
 /*Adoptions Intro Paragraph*/
 .adoption-intro{
     color: #77747F;
-    margin-top: 2%;
+    margin: 1% 1%;;
     width:95%;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    text-align: center;
+    font-size: 1.1em;
 }
 
 
@@ -222,3 +227,16 @@ form > .btn:hover{
         font-size: 40px;
     }
 }
+/* media queries */
+ @media only screen and (max-width: 768px) {
+    .navbar .navbar-collapse {
+        border-color: #83a7f7;
+        background-color: #d6d4d8;
+     } 
+     .icon-bar {
+         color: #83a7f7;
+         background-color:transparent;
+     }
+     
+ }
+
