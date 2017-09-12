@@ -1,7 +1,8 @@
 <!-- 
 
         filename: index.html
-        authors: Sara Simpson, Ashley Warner, James Macadoo, Christopher Boston
+        authors: Sara Simpson
+        GROUP 5
 
 -->
 <!DOCTYPE html>
@@ -15,55 +16,107 @@
         <link rel="icon" type="image/png" href="images/favicomatic/favicon-32x32.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="images/favicomatic/favicon-16x16.png" sizes="16x16" />
         <script src="https://use.fontawesome.com/efcce77ac8.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed" rel="stylesheet">
         <link rel="stylesheet" href="styles/indexStyles.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="javascript/index.js"></script>
     </head>
     <body>
         <!-- header -->
-        <!-- added wrapper for background- broken -->
+        <!-- added wrapper for background-->
         <div id="header-wrapper">
-      <nav class="navbar navbar-fixed-top">
-          <div class="navbar-inner">
-        <div class="container-fluid">
-            <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            	<span class="icon-bar"></span>
-             	<span class="icon-bar"></span>
-             	<span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#home"><img src="http://via.placeholder.com/100x100"></a>
-            </div>
-            <div class="navbar-collapse collapse">
-            	<ul class="nav navbar-nav navbar-right">
-            		<li><a href="#home">Home</a></li>
-                    <li><a href="#">Adopt</a></li>
-                    <li><a href="#">Volunteer</a></li>
-                    <li><a href="#">Events</a></li>
-                    <!-- not allowed as child element of ul -->
-                    <button type="button" class="btn btn-warning btn-large">Donate</button>
-            	</ul>
+            <nav class="navbar navbar-inverse">
+                <div class="navbar-header">
+                    <button id="hamburger" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            	       <span class="icon-bar"></span>
+             	       <span class="icon-bar"></span>
+             	       <span class="icon-bar"></span>
+                    </button>
+                    <a id="logo" class="navbar-brand" href="#home"><img src="images/icon.png" width="100" height="100"></a>
                 </div>
-            </div>
-        </div>
-    </nav> 
+                <div class="navbar-collapse collapse">
+                    <button type="button" class="btn btn-warning btn-large donate">Donate</button>
+            	    <ul id="navigation" class="nav navbar-nav navbar-right">
+            		    <li><a href="index.html">Home</a></li>
+                        <li><a href="Adoptions/adoptions.html">Adopt</a></li>
+                        <li><a href="Volunteer/volunteer.html">Volunteer</a></li>
+                        <li><a href="Events/events.html">Events</a></li>
+            	   </ul>
+                </div>
+                
+            </nav> 
         </div>
             <!-- jumbotron -->
             <div class="jumbotron">
-               <p>Rescue One strives to rescue abused, neglected and homeless animals and place them in loving homes. Rescue One is a 100% non-profit organization run entirely by dedicated volunteers who offer their time and resources to house, train, transport and care for the animals in our care.</p>
+               <p>Our mission is to rescue abused, neglected and homeless animals and place them in loving homes. We are a 100% non-profit organization run entirely by dedicated volunteers who offer their time and resources to house, train, transport and care for the animals in our care.</p>
             </div>
-            <!-- footer -->
+            <div class="row monthly-section">
+                <div class="col-xs-12">
+                    <h2 class="monthly">Mutt of the Month</h2>
+                </div>
+                <div class="col-xs-12 col-md-6 dog-monthly">
+                    <img src="http://res.cloudinary.com/sara-simpson-img/image/upload/c_scale,w_400/v1505074445/MuttOfTheMonth_ycmqe1.jpg">
+                </div>
+                  <div class="col-xs-12 col-md-6">
+                    <p class="about-dog">Ac ut nunc condimentum neque mattis ullamcorper natoque lobortis ullamcorper aliquam nunc adipiscing vestibulum amet vel ad nulla adipiscing accumsan condimentum a etiam et quisque hendrerit suspendisse ornare. Vivamus lacus ut laoreet a consectetur dui bibendum dignissim ullamcorper nascetur penatibus dolor cursus suspendisse imperdiet massa netus donec a magnis porta dapibus a lorem quis justo a. Fermentum vestibulum ullamcorper a a parturient justo scelerisque dis libero tortor parturient ullamcorper suscipit montes adipiscing. Tellus a neque at malesuada pharetra ultricies imperdiet elit a vitae at justo adipiscing nunc vestibulum cursus erat class. A metus posuere massa ligula adipiscing ac et suspendisse nibh molestie ad ullamcorper iaculis vehicula gravida.</p>
+                      <!-- link to adoption form -->
+                      <div class="adopt-me"><a href="Adoptions/adoptions.html#form-div" class="btn btn-info btn-large" role="button">Adopt Me!</a></div>
+                </div>
+            </div>
+            <!-- footer --> 
         <footer>
-               <ul class="social-media">
-                    <li class="facebook">
-                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                    </li>
-                    <li class="twitter">
-                        <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                    </li>
-                    <li class="instagram">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                   </li>
-            </ul>
+            <!-- back to top button -->
+            <button onclick="topFunction()" id="topButton" title="Back to Top"><i class="fa fa-arrow-circle-up fa-3x" aria-hidden="true"></i></button>
+            <div class="row">
+            <h2 class="follow">Follow Us</h2>
+            </div>
+                <div class="row social-media-icons">
+                    <div class="col-xs-4 facebook">
+                        <i class="fa fa-facebook-square fa-4x" aria-hidden="true"><a href="#"></a></i>
+                    </div>
+                    <div class="col-xs-4 twitter">
+                        <i class="fa fa-twitter-square fa-4x" aria-hidden="true"><a href="#"></a></i>
+                    </div>
+                    <div class="col-xs-4 instagram">
+                        <i class="fa fa-instagram fa-4x" aria-hidden="true"><a href="#"></a></i>
+                    </div>
+                </div>
+            <!-- add a contact form 
+            <div class="row contact">
+                <div class=""></div>
+            </div> -->
+            <div class="row resources">
+                <div class="col-xs-12 col-md-3">
+                    <h2>Spay &amp; Neuter</h2>
+                    <p><a href="http://spayneuterspringfield.org" target="_blank">SAAF&dash;Springfield Animal Advocacy Foundation</a></p>
+                    <p><a href="http://snap123.org" target="_blank">SNAP&dash;Spay Neuter Assistance Program</a></p>
+                    <p><a href="http://whentospay.org" target="_blank">&#35;WhenToSpay</a></p>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <h2>Tips for New Dog Owners</h2>
+                    <p><a href="http://tinyurl.com/pjqly55" target="_blank">Tips for the First 30 Days</a></p>
+                    <p><a href="http://tinyurl.com/yc4hn9pl" target="_blank">New Dog Survival Guide</a></p>
+                    <p><a href="http://tinyurl.com/7e7qql5" target="_blank">Introducing Your New Dog to Other Dogs</a></p>
+                    <p><a href="http://rover.com/dog-proofing-your-home" target="_blank">Dog Proof Your Home</a></p>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <h2>Lost &amp; Found Resources</h2>
+                    <p><a href="http://tinyurl.com/3lgnlrv" target="_blank">How to Help a Stray Pet</a></p>
+                    <p><a href="http://tinyurl.com/y8d98e8j" target="_blank">Stray Intake</a></p>
+                    <p><a href="http://swh.org" target="_blank">Humane Society of Southwest Missouri</a></p>
+                    <p><a href="http://facebook.com/LeighsLostAndFound" target="_blank">Leigh's Lost &amp; Found</a></p>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <h2>Animal Welfare</h2>
+                    <p><a href="http://tinyurl.com/7bstzef" target="_blank">Facts About Chaining and Tethering</a></p>
+                    <p><a href="http://tinyurl.com/7tdmdc4" target="_blank">Why Outdoor Dogs Are Miserable</a></p>
+                    <p><a href="http://tinyurl.com/y72pv4jn" target="_blank">Puppy Mills Are Cruel</a></p>
+                    <p><a href="http://tinyurl.com/oems4t5" target="_blank">7 Reasons to Never Leave Your Dog in the Car</a></p>
+                </div>
+            </div>
+            <div class="contact">
+                <p>CONTACT US | ###-###-#### | rescue@email | 123 Puppy Ave, Springfield, MO 65804</p>
+            </div>
         </footer>
             
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
