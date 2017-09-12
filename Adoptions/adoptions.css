@@ -3,7 +3,70 @@ html{
     width: 100%;
 }
 
-/*Navigation*/
+/* reset styles- add by Sara */ 
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* all header added by Sara */
+/* header */
+#logo {
+    padding: 1.25em;
+}
+
+#navigation li a, #navigation li a:visited {
+    color: #fff;
+    margin: 1em;
+    font-size: 1.25em;
+    text-shadow: 2px 2px black;
+}
+.donate {
+    margin: 4em;
+    font-size: 1.25;
+    float: right;
+}
+
+#navigation li a:hover  {
+    font-size: 1.25em;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 3px 3px black;
+    font-weight: bold;
+    background-color: #ff7b60;
+    border-radius: 10%;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    margin: 2em;
+}
+
+.nav li a:hover {
+    font-size: 1.25em;
+}
+
+.navbar {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+#hamburger {
+    border: none !important;
+}
+#hamburger:hover {
+    background-color: #ff7b60;
+}
+
 
 
 /*Adoptions Header Style*/
