@@ -107,8 +107,28 @@
                 <label for="inputZip" class="col-form-label">Zip</label>
                 <input type="text" class="form-control" id="inputZip" placeholder="Zip">
               </div>
-            </div>
-            <button type="submit" class="btn btn-primary" onclick="formSubmit()">SUBMIT</button>
+              <fieldset class="form-group row">
+                <div class="form-group col-sm-8">
+                  <div class="form-check">
+                    <label for="volunteerRadio">Interested in?</label>
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" id="volunteerRadio" value="">
+                    Volunteer
+                  </label>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" id="fosterRadio" value="">
+                    Fostering
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              <div class="form-group row">
+                <div class="offset-sm-2 col-sm-10">
+                  <button type="submit" class="btn btn-primary" id="submitButton" onclick="formSubmit()">SUBMIT</button>
+                </div>
+              </div>
           </form>
       </div>
 

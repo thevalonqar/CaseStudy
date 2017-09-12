@@ -59,3 +59,13 @@ div > form > .form-group > input::placeholder{
 div > form > .form-row > .form-group > input::placeholder{
     color: #D6D4D8;
 }
+
+/*Submit Button*/
+#submitButton{
+    background-color: #5AE8DE !important;
+    border: none;
+}
+
+#submitButton:hover{
+    background-color: #FF7B60 !important;
+}
