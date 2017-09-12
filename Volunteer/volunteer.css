@@ -24,10 +24,13 @@ html{
     color: #77747F;
     margin-top: 2%;
     width:95%;
+    word-wrap: break-word;
+    margin-bottom: 5%;
 }
 
-.volunteer-intro{
-  margin-bottom: 5%;
+#dogImage{
+  float: left;
+  margin-right: 6%;
 }
 
 /*Overall Form Styling*/
