@@ -1,0 +1,161 @@
+html{
+    font-family: 'Encode Sans Condensed', sans-serif;
+    width: 100%;
+}
+
+/*Navigation*/
+
+
+/*Adoptions Header Style*/
+.display-3{
+    margin: 3%;
+    margin-top: -1%;
+    color: #5AE8DE;
+}
+
+/*Adoptions Intro Paragraph*/
+.adoption-intro{
+    color: #77747F;
+    margin-top: 2%;
+    width:95%;
+}
+
+
+/*Modal*/
+.modalClass{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+#modalContent {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 80%;
+    cursor: default;
+    color: #77747F;
+}
+
+#adoptLink{
+    color: white;
+    text-decoration: none;
+}
+
+.petName {
+    color: #5AE8DE;
+    font-weight: 500;
+    font-variant: small-caps;
+    font-size: 28px;
+}
+
+#adoptMe{
+    float: right;
+    background-color: #83A7F7;
+    color: #fefefe;
+}
+
+#adoptMe:hover{
+    background-color: #FF7B60;
+}
+
+#closeModal {
+    margin-bottom: -1%;
+    color: #aaa;
+    text-align: right;
+}
+
+#closeModal:hover,
+#closeModal:focus {
+    color: #FF7B60;
+    text-decoration: none;
+}
+
+/*Centering Profile Images*/
+#profile-list{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.pic{
+    text-align: center;
+    margin-top: 4%;
+}
+
+/*Profile Pic Hover*/
+.pic > .img-thumbnail:hover{
+    background-color: #FF7B60;
+    border: 1px solid #FF7B60;
+}
+
+/*Overall Form Styling*/
+#form-div{
+    background-color: #83A7F7;
+    width: 100%;
+    padding-top: 4%;
+    padding-bottom: 3%;
+    margin-top: 10%;
+    margin-bottom: 0;
+}
+
+#form{
+    margin: 0 auto;
+}
+
+/*Form Headers*/
+form, .display-4{
+    color: white;
+    margin-bottom: 2%;
+    margin-top: 4%;
+}
+
+/*Placeholder Text*/
+div > form > .form-group > input::placeholder{
+    color: #D6D4D8;
+}
+
+div > form > .form-row > .form-group > input::placeholder{
+    color: #D6D4D8;
+}
+
+/*Reason Text Box*/
+
+#reasonDiv {
+    width: 100%;
+}
+
+#inputReason {
+    height: 80px;
+}
+
+/*Submit Button*/
+form > .btn{
+    background-color: #5AE8DE;
+    border: none;
+}
+
+form > .btn:hover{
+    background-color: #FF7B60;
+}
+
+@media screen and (max-width: 380px){
+    #mobileHeader {
+        font-size: 60px;
+    }
+
+    #form > #mobileAnimalHeader{
+        font-size: 40px;
+    }
+
+    #form > #mobileApplicantHeader{
+        font-size: 40px;
+    }
+}
