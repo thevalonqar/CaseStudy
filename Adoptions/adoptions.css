@@ -75,7 +75,7 @@ li {
     margin-top: -1%;
     color: #5AE8DE;
     font-family: 'Encode Sans Condensed', sans-serif;
-    font-size: 3.5em;
+    font-size: 4em;
 }
 
 /*Adoptions Intro Paragraph*/
@@ -111,6 +111,7 @@ li {
     width: 80%;
     cursor: default;
     color: #77747F;
+    font-family: 'Encode Sans Condensed', sans-serif;
 }
 
 #adoptLink{
@@ -237,6 +238,11 @@ form > .btn:hover{
          color: #83a7f7;
          background-color:transparent;
      }
-     
+     #mobileHeader {
+         margin-top: 8%; 
+     }
+     #hamburger {
+         background-color: #FF7B60;
+     }
  }
 
