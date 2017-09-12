@@ -17,7 +17,6 @@ html{
     width:95%;
 }
 
-/* Jumbotron */
-a > .btn{
-  text-align: center;
+.volunteer-intro{
+  margin-bottom: 5%;
 }
