@@ -85,7 +85,10 @@
             <h3 class="volunteer-subheading">Become a Volunteer</h3>
             <hr>
             <div class="col-md-6">
-              <img src="dog1.jpg" class="img-thumbnail" alt="dog" id="dogImage">
+              <figure class="figure">
+                <img src="dog1.jpg" class="figure-img img-thumbnail" alt="A picture of a dog.">
+                <figcaption class="figure-caption text-center"> <caption><small>This is the picture of dog.</small></caption>.</figcaption>
+              </figure>
             </div>
             <p class="volunteer-intro">
               Fostering a homeless pet can be a rewarding experience. By becoming a foster, you will provide a temporary home for the animal until it can be placed into a forever home.  Our goal is to match you with the pet that is going to be the best fit for your home environment. We are not a breed specific rescue, so if there is a specific breed you are interested in fostering, please let us know.
@@ -106,7 +109,7 @@
       <!-- Volunteer Information -->
       <div class = "container-fluid" id="form-div">
           <a name="jump"></a>
-          <form class="col-xs-12 col-lg-8" id="form">
+          <form class="container" id="form">
               <!--Animal's Information-->
 
               <!-- Information-->
@@ -148,8 +151,8 @@
                 <label for="inputZip" class="col-form-label">Zip</label>
                 <input type="text" class="form-control" id="inputZip" placeholder="Zip">
               </div>
-              <fieldset class="form-group row">
-                <div class="form-group col-sm-8">
+              <!-- <fieldset class="form-group row">
+                <div class="form-group col-sm-12">
                   <div class="form-check">
                     <label for="volunteerRadio">Interested in?</label>
                   <label class="form-check-label">
@@ -164,12 +167,24 @@
                     </label>
                   </div>
                 </div>
-              </fieldset>
-              <div class="form-group row">
-                <div class="offset-sm-2 col-sm-10">
-                  <button type="submit" class="btn btn-primary" id="submitButton" onclick="formSubmit()">SUBMIT</button>
+              </fieldset> -->
+              <div class="form-group col-sm-6">
+                  <label for="volunteerRadio">Interested in?</label>
+                <div class="radio">
+                  <label><input type="radio" name="optradio">Option 1</label>
                 </div>
+                <div class="radio">
+                  <label><input type="radio" name="optradio">Option 2</label>
+                </div>
+
               </div>
+              </div>
+              <div class="form-group col-sm-6">
+                <!-- <div class="offset-sm-2 col-sm-10"> -->
+                  <button type="submit" class="btn btn-primary" id="submitButton" onclick="formSubmit()">SUBMIT</button>
+                <!-- </div> -->
+              </div>
+            </div>
           </form>
       </div>
 

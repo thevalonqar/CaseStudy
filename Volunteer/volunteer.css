@@ -68,6 +68,7 @@ li {
 
 #hamburger {
     border: none !important;
+    box-shadow: 10px 10px 5px grey;
 }
 #hamburger:hover {
     background-color: #ff7b60;
@@ -98,7 +99,7 @@ li {
 /*Volunteer Intro Paragraph*/
 .volunteer-intro{
     color: #77747F;
-    margin-top: 2%;
+    margin: 4%;
     width:95%;
     word-wrap: break-word;
     margin-bottom: 5%;
@@ -141,12 +142,12 @@ div > form > .form-row > .form-group > input::placeholder{
 
 /*Submit Button*/
 #submitButton{
-    background-color: #5AE8DE !important;
+    background-color: #5AE8DE;
     border: none;
 }
 
 #submitButton:hover{
-    background-color: #FF7B60 !important;
+    background-color: #FF7B60;
 }
 
 
