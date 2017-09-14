@@ -72,3 +72,19 @@ div > form > .form-row > .form-group > input::placeholder{
 #submitButton:hover{
     background-color: #FF7B60 !important;
 }
+
+
+/* MEDIA QUERIES FROM ASHLEY */
+@media screen and (max-width: 380px){
+    #mobileHeader {
+        font-size: 60px;
+    }
+
+    #form > #mobileAnimalHeader{
+        font-size: 40px;
+    }
+
+    #form > #mobileApplicantHeader{
+        font-size: 40px;
+    }
+}
