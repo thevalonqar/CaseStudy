@@ -1,17 +1,91 @@
+/* CSS Styles for Volunteer.html page
+    Author:   James McAdoo
+    Class     Wev Dev 2 : CIS-131*/
+
+
+/* reset styles */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 /* Font for Page */
 html{
     font-family: 'Encode Sans Condensed', sans-serif;
     width: 100%;
 }
 
-/* Navbar Style*/
-/*nav{
-  background-color: #d6d4d8;
+/* Nav Styles - from Sara*/
+body {
+    overflow-x: hidden;
 }
 
-.nav-link{
-  background-color: white;
-}*/
+/* header */
+#logo {
+    padding: 1.25em;
+}
+
+#navigation li a, #navigation li a:visited {
+    color: #fff;
+    margin: 1em;
+    font-size: 1.25em;
+    text-shadow: 2px 2px black;
+}
+.donate {
+    margin: 4em;
+    font-size: 1.25;
+    float: right;
+}
+
+#navigation li a:hover  {
+    font-size: 1.25em;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 2px 2px black;
+    font-weight: bold;
+    background-color: #ff7b60;
+    border-radius: 10%;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    margin: 2em;
+}
+
+.nav li a:hover {
+    font-size: 1.25em;
+}
+
+.navbar {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+#hamburger {
+    border: none !important;
+}
+#hamburger:hover {
+    background-color: #ff7b60;
+}
+
+/* jumbotron */
+.jumbotron {
+    background-color: #83a7f7 !important;
+}
+
+.jumbotron p {
+    font-size: 3em;
+    text-align: center;
+    color: #fff;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    margin: 1em;
+}
+
 
 /*Volunteer Header Style*/
 .display-3{
