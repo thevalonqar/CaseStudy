@@ -68,7 +68,7 @@ li {
 
 #hamburger {
     border: none !important;
-    box-shadow: 10px 10px 5px grey;
+
 }
 #hamburger:hover {
     background-color: #ff7b60;
@@ -153,6 +153,8 @@ div > form > .form-row > .form-group > input::placeholder{
 
 /* MEDIA QUERIES FROM ASHLEY */
 @media screen and (max-width: 380px){
+
+
     #mobileHeader {
         font-size: 60px;
     }
@@ -165,3 +167,16 @@ div > form > .form-row > .form-group > input::placeholder{
         font-size: 40px;
     }
 }
+
+ @media only screen and (max-width: 768px) {
+    .navbar .navbar-collapse {
+        border-color: #83a7f7;
+        background-color: #d6d4d8;
+     }
+     #logo {
+      margin-bottom: 50px;
+     }
+    #hamburger{
+      background-color: #5AE8DE;
+    }
+ }
