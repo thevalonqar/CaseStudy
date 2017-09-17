@@ -21,7 +21,7 @@ function topFunction() {
         ["This shelter is amazing!", "Mary"],
         ["Animal Shelter gave me my best friend!", "Tom"],
         ["Animal Shelter helps so many dogs and pups in need.", "Molly"],
-        ["Volunteering at Animal Shelter is the best", "Bill"]
+        ["Volunteering at Animal Shelter is the best", "Bill"],
         ["I adopted all of my dogs from here!", "Sue"]
 ]
 
