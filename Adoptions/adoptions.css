@@ -147,6 +147,15 @@ form > .btn:hover{
     background-color: #FF7B60;
 }
 
+footer p {
+    background-color: #83A7F7;
+    margin-bottom: -5% !important;
+    color: #fff;
+    text-align: right;
+    font: 12px;
+    padding-right: 1%;
+}
+
 @media screen and (max-width: 380px){
     #mobileHeader {
         font-size: 60px;

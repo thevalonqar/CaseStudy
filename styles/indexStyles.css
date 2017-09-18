@@ -1,6 +1,6 @@
 /*
     filename: indexStyles.css
-    authors: Sara Simpson,
+    authors: Sara Simpson
 */
 
 /* reset styles */
@@ -29,6 +29,8 @@ body {
     margin: 4em;
     font-size: 1.25;
     float: right;
+    background-color: #ff7b60 !important;
+    border: 1px solid #77747f !important;
 }
 
 #navigation li a:hover  {
@@ -63,7 +65,7 @@ li {
     border: none !important;
 }
 #hamburger:hover {
-    background-color: #ff7b60;
+    background-color: rgba(255,123,96,0.8);
 }
 
 /* made wrapper use this photo for the whole header */
@@ -72,6 +74,32 @@ li {
     width: 100%;
     height: 650px;
     background-size: cover;
+    position: relative;
+}
+
+/* possible quote placement */
+.main {
+    position: absolute;
+    left: 75%;
+    top: 40%;
+    color: white;
+    transform: translate(-50%, -50%);
+    background-color: #5ae8de;
+    padding: 1.5%; 
+    border: 1px solid #77747f !important;
+    border-radius: 5px;
+}
+
+.main .btn-lg {
+    background-color: white;
+    color: black;
+    float: right;
+    color: #77747f;
+    border: 1px solid #77747f !important;
+}
+
+.main .btn-lg:hover {
+    color: #ff7b60;ff7b60
 }
 
 .adopt-me {
@@ -202,4 +230,19 @@ footer h2 {
         background-color: #d6d4d8;
      } 
      
+     .main h2 {
+        font-size: 16px;
+     }
+     
+     .main .btn-lg {
+         width: 50%;
+         font-size: 12px;
+         padding: 4%;
+     }
+ }
+
+@media only screen and (max-width: 520px) {
+     .main {
+         display: none;
+     }
  }
