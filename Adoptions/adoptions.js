@@ -1,7 +1,10 @@
 /*Modal*/
-function imageClick() {
+var dogNames = ["Bailey", "Max", "Charlie", "Buddy", "Spot", "Bella", "Lucy", "Toby", "Lola", "Riley", "Emma", "Angel", "Buster", "Lucky", "Duke"];
+
+function imageClick(i) {
     "use strict";
     document.getElementById("modalId").style.display = 'block';
+    document.getElementById('petName').innerHTML = dogNames[i];
 }
 
 function imageClose() {
@@ -15,6 +18,8 @@ window.onclick = function (event) {
         document.getElementById("modalId").style.display = 'none';
     }
 };
+
+
 
 /*Submit Form*/
 function formSubmit() {
