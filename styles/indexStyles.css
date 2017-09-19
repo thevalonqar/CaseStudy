@@ -1,0 +1,248 @@
+/*
+    filename: indexStyles.css
+    authors: Sara Simpson
+*/
+
+/* reset styles */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* header */
+#logo {
+    padding: 1.25em;
+}
+
+#navigation li a, #navigation li a:visited {
+    color: #fff;
+    margin: 1em;
+    font-size: 1.25em;
+    text-shadow: 2px 2px black;
+}
+.donate {
+    margin: 4em;
+    font-size: 1.25;
+    float: right;
+    background-color: #ff7b60 !important;
+}
+
+#navigation li a:hover  {
+    font-size: 1.25em;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 2px 2px black;
+    font-weight: bold;
+    background-color: #ff7b60;
+    border-radius: 10%;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    margin: 2em;
+}
+
+.nav li a:hover {
+    font-size: 1.25em;
+}
+
+.navbar {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+#hamburger {
+    border: none !important;
+}
+#hamburger:hover {
+    background-color: rgba(255,123,96,0.8);
+}
+
+/* made wrapper use this photo for the whole header */
+#header-wrapper {
+    background: url("http://res.cloudinary.com/sara-simpson-img/image/upload/v1505128377/duffy-brook-350228_vnaxkf_f9dpde.jpg")no-repeat center center;
+    width: 100%;
+    height: 650px;
+    background-size: cover;
+    position: relative;
+}
+
+/*  quote placement */
+.main {
+    position: absolute;
+    left: 75%;
+    top: 45%;
+    color: white;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255,123,96,0.6);
+    padding: 1.5%; 
+    border: none;
+    border-radius: 5%;
+}
+
+.main .btn-lg {
+    background-color: white;
+    color: black;
+    float: right;
+    color: #77747f;
+    border: 1px solid #77747f !important;
+}
+
+.main .btn-lg:hover {
+    color: #ff7b60;
+}
+
+.adopt-me {
+    text-align: center;
+    margin: auto;
+}
+
+/* jumbotron */
+.jumbotron {
+    background-color: #83a7f7 !important;
+}
+
+.jumbotron p {
+    font-size: 3em;
+    text-align: center;
+    color: #fff;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    margin: 1em;
+}
+
+/* main */
+.monthly {
+    text-align: center;
+    margin-bottom: 1.5em;
+    font-family: 'Encode Sans Condensed', sans-serif;
+}
+
+.monthly-section{
+    margin-bottom: 2.5em;
+    padding-bottom: 1.5em;
+}
+
+.dog-monthly {
+    text-align: center;
+    display: right;
+}
+.about-dog {
+    margin: 3em 2em 0 0;
+    text-align: center;
+    padding: 1em;
+    font-size: 1.25em;
+}
+
+
+#adopt-button {
+    background-color: #83a7f7;
+    color: #fff;
+    margin-right: 45%;
+}
+
+.social-media-icons {
+    text-align: center;
+    color: #ff7b60;
+}
+
+/* footer */
+.follow {
+    margin-top: 1em;
+    text-align: center;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    color: #fff;
+    
+}
+.social-media-icons {
+    text-align: center;
+    margin: 1.5em 0;
+    padding: 1.55em 0;
+    cursor: pointer;
+}
+
+.resources {
+    text-align: center;
+    margin-top: 1.5em;
+    padding: 1em;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    background-color: #77747f;
+    color: #fff;
+    margin-top: 1.5em;
+    padding: 3em;
+    font-size: 1.25em;
+}
+
+.resources a,
+.resources a:hover,
+.resources a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+.resources a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #d6d4d8;
+}
+
+footer h2 {
+    text-shadow: 2px 2px black;
+}
+ 
+.contact {
+    background-color: #77747f;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.15em;
+    padding: 2em;
+}
+/* back to top button */
+#topButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border:none;
+    outline: none;
+    background-color: transparent;
+    color: #000;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* media queries */
+ @media only screen and (max-width: 768px) {
+    .navbar .navbar-collapse {
+        border-color: #83a7f7;
+        background-color: #d6d4d8;
+     } 
+     
+     .main h2 {
+        font-size: 16px;
+     }
+     
+     .main .btn-lg {
+         width: 50%;
+         font-size: 12px;
+         padding: 4%;
+     }
+ }
+
+@media only screen and (max-width: 520px) {
+     .main {
+         display: none;
+     }
+ }
