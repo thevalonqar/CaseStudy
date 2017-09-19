@@ -1,6 +1,15 @@
 /*Modal*/
 var dogNames = ["Bailey", "Max", "Charlie", "Buddy", "Spot", "Bella", "Lucy", "Toby", "Lola", "Riley", "Emma", "Angel", "Buster", "Lucky", "Duke"];
 
+/*Function to return thumbnail image*/
+function imageLoad() {
+      return "Thumbnail1.jpg";
+}
+/*event to call for function on load*/
+document.onload = function(){
+  document.getElementById('imageBox').src=imageLoad();
+}
+
 function imageClick(i) {
     "use strict";
     document.getElementById("modalId").style.display = 'block';
